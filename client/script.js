@@ -5,7 +5,7 @@ let isGameActive = false;
 let symbol = null;
 let turn = null;
 
-let ws = new WebSocket("ws://localhost:8080");
+let ws = new WebSocket("ws://t-t-t.onrender.com:8080");
 
 ws.onmessage = message => {
   const response = JSON.parse(message.data);
